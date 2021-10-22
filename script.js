@@ -1,5 +1,5 @@
 const input = document.getElementById('text-input');
-// const container = document.getElementById('meme-image-container');
+const container = document.getElementById('meme-image-container');
 const memeText = document.getElementById('meme-text');
 const fileInput = document.getElementById('meme-insert');
 const memeImage = document.getElementById('meme-image');
@@ -22,3 +22,26 @@ input.addEventListener('keyup', showInputValue);
 //   file.readAsDataURL(event.target.files[0]);
 // }
 // fileInput.addEventListener('change', insertImage, true);
+
+// 6
+const fireButton = document.getElementById('fire');
+const waterButton = document.getElementById('water');
+const earthButton = document.getElementById('earth');
+
+function fire() {
+  container.style.border = '3px dashed red';
+}
+
+fireButton.addEventListener('click', fire);
+
+function water() {
+  container.style.border = '5px double blue';
+}
+
+waterButton.addEventListener('click', water);
+
+function earth() {
+  container.style.border = '6px groove green';
+}
+
+earthButton.addEventListener('click', earth);
