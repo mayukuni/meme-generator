@@ -45,3 +45,18 @@ function earth() {
 }
 
 earthButton.addEventListener('click', earth);
+
+// 7
+const meme1 = document.getElementById('meme-1');
+const meme2 = document.getElementById('meme-2');
+const meme3 = document.getElementById('meme-3');
+const meme4 = document.getElementById('meme-4');
+
+function insertMemeImage(event) {
+  memeImage.src = event.target.src;
+}
+
+meme1.addEventListener('click', insertMemeImage);
+meme2.addEventListener('click', insertMemeImage);
+meme3.addEventListener('click', insertMemeImage);
+meme4.addEventListener('click', insertMemeImage);
