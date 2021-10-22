@@ -19,18 +19,25 @@
 }
 
 #fire {
-  border: 3px dashed red;
+  border: 3px dashed pink;
+  background-color: red;
 }
 
 #water {
-  border: 5px double blue;
+  border: 5px double aliceblue;
+  background-color: blue;
 }
 
 #earth {
-  border: 6px groove green;
+  border: 6px groove greenyellow;
+  background-color: green;
 }
 
 #images img {
 width: 10%;
 height: 10%;
+}
+
+body {
+  background-color:
 }
