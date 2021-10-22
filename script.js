@@ -14,13 +14,11 @@ input.addEventListener('keyup', showInputValue);
 
 // 2
 // https://www.horadecodar.com.br/2020/05/20/javascript-preview-de-imagem-carregada-em-input-file/
-function insertImage() {
-  if (this.files && this.files[0]) {
-    const file = new FileReader();
-    file.onload = (event) => {
-      memeImage.src = event.target.result;
-    };
-    file.readAsDataURL(this.files[0]);
-  }
+function insertImage(event) {
+  const file = new FileReader();
+  file.onload = function addImage() {
+    memeImage.src = file.result;
+  };
+  file.readAsDataURL(event.target.files[0]);
 }
 fileInput.addEventListener('change', insertImage, true);
