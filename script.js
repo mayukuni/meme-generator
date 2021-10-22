@@ -23,4 +23,4 @@ function insertImage() {
     file.readAsDataURL(this.files[0]);
   }
 }
-fileInput.addEventListener('change', insertImage, false);
+fileInput.addEventListener('change', insertImage);
